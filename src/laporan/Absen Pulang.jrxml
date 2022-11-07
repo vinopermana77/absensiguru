@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cdb02bf4-838b-4cd5-95cf-952c4c5bbbee">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     jam_pulang_guru.`no` AS jam_pulang_guru_no,
+     jam_pulang_guru.`nip` AS jam_pulang_guru_nip,
+     jam_pulang_guru.`nama` AS jam_pulang_guru_nama,
+     jam_pulang_guru.`tanggal` AS jam_pulang_guru_tanggal,
+     jam_pulang_guru.`waktu` AS jam_pulang_guru_waktu,
+     jam_pulang_guru.`jabatan` AS jam_pulang_guru_jabatan
+FROM
+     `jam_pulang_guru` jam_pulang_guru]]>
+	</queryString>
+	<field name="jam_pulang_guru_nip" class="java.lang.String"/>
+	<field name="jam_pulang_guru_nama" class="java.lang.String"/>
+	<field name="jam_pulang_guru_tanggal" class="java.sql.Date"/>
+	<field name="jam_pulang_guru_waktu" class="java.sql.Time"/>
+	<field name="jam_pulang_guru_jabatan" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="86" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="48" width="504" height="23" uuid="6cf03d68-aeb5-40bd-a24c-bb79677f7122"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Jl. Raya Perum Puspitek Sektor IV Ds. Situgadung, Kabupaten Tangerang, Banten]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="26" width="320" height="22" uuid="68cbbacb-a027-45a7-a05e-085614d63573"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEKOLAH DASAR NEGERI PUSPITEK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="250" height="26" uuid="e0087704-2cd7-477b-b97f-04cd9c432a98"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN ABSENSI GURU]]></text>
+			</staticText>
+			<line>
+				<reportElement x="4" y="85" width="798" height="1" uuid="ac497bc3-eb49-4f59-8036-5cf6142058ef"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="802" height="41" uuid="d4f9302b-b1e8-4d71-a810-0ac44154cbe7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[JAM PULANG]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="64" y="0" width="160" height="20" backcolor="#00FFFF" uuid="72e3a84c-00ba-4b4d-b957-532f19d2e763"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[NIP / NUPTK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="250" y="0" width="160" height="20" backcolor="#00FFFF" uuid="ae63928d-fdb4-46e2-b98a-6464be82a186"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="414" y="0" width="133" height="20" backcolor="#00FFFF" uuid="15512772-5ded-4b76-bd1e-82a61c6597a7"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[TANGGAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="547" y="0" width="93" height="20" backcolor="#00FFFF" uuid="d75e6ea9-0fc3-4717-a47f-1482cc698411"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[WAKTU]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="640" y="0" width="160" height="20" backcolor="#00FFFF" uuid="98bb2fdd-3430-4787-8c9c-77c54eb8150b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<text><![CDATA[JABATAN]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="64" y="0" width="160" height="20" uuid="de9e12db-b2dc-4f8b-bcb0-14ef86e170c1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{jam_pulang_guru_nip}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="0" width="160" height="20" uuid="1b397d2f-a5d5-48a5-b06f-cec36f4fbad1"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{jam_pulang_guru_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="414" y="0" width="133" height="20" uuid="41a12cda-3d17-477b-998d-f69d0659f810"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{jam_pulang_guru_tanggal}]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH.mm">
+				<reportElement x="547" y="0" width="93" height="20" uuid="8477236e-61a4-46d0-ab6b-3b66187a8bd2"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{jam_pulang_guru_waktu}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="640" y="0" width="160" height="20" uuid="d5c3f234-f253-46a0-adc0-0c96638ad86b"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textFieldExpression><![CDATA[$F{jam_pulang_guru_jabatan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="52" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
